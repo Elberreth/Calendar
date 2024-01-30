@@ -30,10 +30,9 @@ public class Meeting {
     }
 
 
-
-
-
-
+    public String getUsername() {
+        return username;
+    }
 
     public List<Meeting> getMeetings() {
         return meetings;
