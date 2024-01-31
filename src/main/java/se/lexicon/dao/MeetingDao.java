@@ -8,11 +8,22 @@ import java.util.Optional;
 public interface MeetingDao {
 
 
-    //Meeting - Update, Delete, Create, Find
+    String CREATE_MEETING_SQL = "INSERT INTO meetings (TITLE, START_TIME, END_TIME, _DESCRIPTION, CALENDAR_ID) \n" +
+            "VALUES (?,?,?,?);";
+
+
+    String FIND_BY_ID_SQL = "SELECT * FROM meetings WHERE ID = ?;";
+
+
+    String FIND_ALL_BY_CALENDAR_ID_SQL = "SELECT * FROM meetings WHERE CALENDAR_ID = ?";
+
+
+    String DELETE_MEETING_SQL = "DELETE FROM meetings WHERE ID = ?;";
+
 
     Meeting createMeeting(Meeting meeting);
 
-    Optional<Meeting> findById(int id);
+    Optional<Meeting> findById(int meetingId);
 
     Collection<Meeting> findAllMeetingsByCalenderId(int calenderId);
 

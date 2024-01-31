@@ -2,8 +2,6 @@ package se.lexicon.model;
 
 import java.security.SecureRandom;
 import java.util.Random;
-import se.lexicon.exeption.AuthorizationFailedException;
-import se.lexicon.exeption.UserExpiredException;
 
 public class User {
 

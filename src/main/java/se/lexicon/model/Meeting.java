@@ -1,8 +1,7 @@
 package se.lexicon.model;
 
 import java.time.LocalDateTime;
-import se.lexicon.exeption.UserExpiredException;
-import se.lexicon.exeption.AuthorizationFailedException;
+
 public class Meeting {
 
     private int id;
@@ -37,6 +36,8 @@ public class Meeting {
         this.id = id;
     }
 
+    public Meeting(Meeting meeting) {
+    }
 
 
     public int getId() {

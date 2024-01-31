@@ -1,4 +1,4 @@
-package se.lexicon.exeption;
+package se.lexicon.exception;
 
 public class AuthorizationFailedException extends Exception {
 
